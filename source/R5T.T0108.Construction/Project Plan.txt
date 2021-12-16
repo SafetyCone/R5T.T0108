@@ -1,0 +1,3 @@
+R5T.T0108.Construction - Construction project for Repository name related extension method bases (IRepositoryNameOperator)..
+
+GOALS:
