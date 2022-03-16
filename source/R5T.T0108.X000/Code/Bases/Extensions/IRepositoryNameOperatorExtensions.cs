@@ -9,7 +9,7 @@ namespace System
 {
     public static class IRepositoryNameOperatorExtensions
     {
-        public static string AdjustRepositoryName(this IRepositoryNameOperator _,
+        public static string AdjustRepositoryNameForPrivacy(this IRepositoryNameOperator _,
             string repositoryNameStem,
             bool isPrivate)
         {
