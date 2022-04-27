@@ -44,6 +44,15 @@ namespace System
             return repositoryDirectoryName;
         }
 
+        public static string GetRepositoryNameFromRepositoryDirectoryPath(this IRepositoryNameOperator _,
+            string repositoryDirectoryPath)
+        {
+            var repositoryDirectoryName = Instances.PathOperator.GetDirectoryNameOfDirectoryPath(repositoryDirectoryPath);
+
+            var output = _.GetRepositoryName(repositoryDirectoryName);
+            return output;
+        }
+
         public static char GetRepositoryNameTokenSeparatorCharacter(this IRepositoryNameOperator _)
         {
             return Characters.Period;
